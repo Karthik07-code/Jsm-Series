@@ -30,7 +30,7 @@ const Home = () => {
     SetErrorMsg("");
     try {
       const endpoint = query
-        ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
+        ? `${API_BASE_URL}/search/tv?query=${encodeURIComponent(query)}`
         : `${API_BASE_URL}/tv/popular?page=1`;
       const response = await fetch(endpoint, API_OPTIONS);
 
